@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular2 </title>
+    <link rel="stylesheet" href="vendors/semantic/dist/semantic.css">
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="vendors/jquery/dist/jquery.js"></script>
+    <script src="vendors/semantic/dist/semantic.js"></script>
+</head>
+<body>
+    <script>
+        System.config({
+            packages: {
+                app: {
+                    format: "register",
+                    defaultExtension: 'js'
+                }
+            }
+        })
+        
+        System.import('app/boot.js')
+           .then(null, console.error.bind(console));
+        </script>
+        <redditApp> loading . . .</redditApp>
+</body>
+</html>
